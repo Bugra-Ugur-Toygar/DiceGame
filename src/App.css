@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Tam ekran yüksekliği */
+  width: 100%; /* Tam ekran genişliği */
+  background-color: #2c3e50; /* Arka plan rengi */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box; /* Padding dahil genişlik hesaplaması */
+  margin: 0; /* Varsayılan margin sıfırlama */
+}
+
+.dice-container {
+  display: flex;
+  justify-content: space-around; /* Zarların arasındaki boşluk */
+  align-items: center;
+  width: 100%; /* Tam genişlik */
+  max-width: 600px; /* Zarların hizalanacağı maksimum genişlik */
+  margin: 20px 0; /* Üst ve alt boşluk */
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #27ae60; /* Aktif durum rengi */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2ecc71; /* Hover efekti */
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: #7f8c8d; /* Devre dışı durum rengi */
+  cursor: not-allowed;
+}
